@@ -1,22 +1,10 @@
-import datetime
+import requests
 
-print("=" * 50)
-print("GLOBAL VIRAL REPORT AI")
-print("=" * 50)
+url = "https://news.google.com/rss"
 
-today = datetime.date.today()
+print("Downloading news...")
 
-countries = [
-    "Australia",
-    "USA",
-    "Canada",
-    "UK",
-    "Germany"
-]
+response = requests.get(url)
 
-for country in countries:
-    print(f"Checking {country}...")
-
-print()
-print("News Finder Finished")
-print("Date:", today)
+print(response.status_code)
+print(response.text[:500])
