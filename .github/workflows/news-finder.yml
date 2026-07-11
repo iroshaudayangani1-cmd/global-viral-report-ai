@@ -4,13 +4,19 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  news:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Say Hello
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install packages
         run: |
-          echo "News Finder is working!"
+          pip install requests
+
+      - name: Run News Finder
+        run: python scripts/news_finder.py
