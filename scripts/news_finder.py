@@ -1,4 +1,11 @@
-print("Hello from News Finder!")
+.github/
+    workflows/
+        news-finder.yml
 
-for i in range(1, 6):
-    print(f"News {i}")
+scripts/
+    news_finder.py
+
+config/
+docs/
+prompts/
+README.md
