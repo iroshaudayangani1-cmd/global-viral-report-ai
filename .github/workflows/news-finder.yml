@@ -1,2 +1,6 @@
+name: News Finder
 
-YAML
+on:
+  workflow_dispatch:
+
+jobs:
