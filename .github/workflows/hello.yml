@@ -1,12 +1,7 @@
-name: Hello AI
+name: News Finder
 
 on:
   workflow_dispatch:
 
 jobs:
-  hello:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Say Hello
-        run: echo "Hello! Your AI project is working."
+  ...
