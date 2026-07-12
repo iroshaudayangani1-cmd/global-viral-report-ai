@@ -1,3 +1,5 @@
+name: Global Viral Report AI
+
 on:
   workflow_dispatch:
 
