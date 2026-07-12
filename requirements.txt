@@ -1,5 +1,4 @@
-requests
-beautifulsoup4
-feedparser
-google-generativeai
-python-dotenv
+requests==2.32.3
+feedparser==6.0.11
+google-generativeai==0.8.5
+python-dotenv==1.0.1
